@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Edit Pet Form {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center">Edit Pet</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.photo_url.label }}
+                    {{ form.photo_url(class_="form-control")}}
+                    <small class="form-text">
+                        {{ err }}
+                    </small>
+
+                    {{ form.notes.label }}
+                    {{ form.notes(class_="form-control") }}
+                    <small class="form-text">
+                        {{ err }}
+                    </small>
+
+                    {{ form.available.label }}
+                    {{ form.available()}}
+                </div>
+              
+                <button class="btn btn-success">Save</button>
+                <a href="/" class="btn btn-danger">Go back</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

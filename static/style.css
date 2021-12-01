@@ -1,0 +1,15 @@
+body {
+    margin: 2em;
+}
+
+img {
+    max-width: 250px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card {
+    padding: 1rem;
+}
